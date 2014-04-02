@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/time_label" />
+
+        <EditText
+            android:id="@+id/edtTime"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="@string/time_label" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/notes_label" />
+
+        <EditText
+            android:id="@+id/edtNotes"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:inputType="@string/notes_label" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" 
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:text="@string/save_button_label"
+            tools:ignore="ButtonStyle" 
+            android:onClick="onClickSaveButton"/>
+
+        <Button
+            android:text="@string/cancel_button_label"
+            tools:ignore="ButtonStyle" 
+            android:onClick="onClickCancelButton"/>
+
+    </LinearLayout>
+
+</LinearLayout>
