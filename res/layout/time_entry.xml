@@ -20,7 +20,7 @@
             android:id="@+id/edtTime"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:inputType="@string/time_label" />
+            android:inputType="time" />
 
         <TextView
             android:layout_width="fill_parent"
@@ -31,26 +31,29 @@
             android:id="@+id/edtNotes"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:inputType="@string/notes_label" />
+            android:inputType="text" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="horizontal" 
-        android:layout_gravity="center_horizontal">
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0"
+        android:orientation="horizontal" >
 
         <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickSaveButton"
             android:text="@string/save_button_label"
-            tools:ignore="ButtonStyle" 
-            android:onClick="onClickSaveButton"/>
+            tools:ignore="ButtonStyle" />
 
         <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickCancelButton"
             android:text="@string/cancel_button_label"
-            tools:ignore="ButtonStyle" 
-            android:onClick="onClickCancelButton"/>
-
+            tools:ignore="ButtonStyle" />
     </LinearLayout>
 
 </LinearLayout>

@@ -8,6 +8,6 @@
     <string name="notes_label">Notes</string>
     <string name="save_button_label">Save</string>
     <string name="cancel_button_label">Cancel</string>
-    
+    <string name="add_time_label">Add Time</string>
 
 </resources>

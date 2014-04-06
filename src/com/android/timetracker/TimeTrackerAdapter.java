@@ -51,5 +51,9 @@ public class TimeTrackerAdapter extends BaseAdapter {
         
         return view;
     }
+    
+    public void add(TimeRecord record){
+        timeRecords.add(record);
+    }
 
 }

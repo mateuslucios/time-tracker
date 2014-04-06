@@ -23,5 +23,10 @@ public class TimeTrackerListFragment extends Fragment {
         
         return fragmentView;
     }
+    
+    public void addTime(TimeRecord record){
+        timeTrackerAdapter.add(record);
+        timeTrackerAdapter.notifyDataSetChanged();
+    }
 
 }
