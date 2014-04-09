@@ -1,7 +1,6 @@
 package com.android.timetracker;
 
 import android.app.Activity;
-import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -11,11 +10,19 @@ import android.view.MenuItem;
 public class TimeTracker extends Activity {
 
     private static final int TIME_TRACKER_ENTRY_CODE = 1;
-
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+    }
+    
+    @Override
+    protected void onStart() {
+        super.onStart();
+        TimeTrackerListFragment fragment = (TimeTrackerListFragment) getFragmentManager().findFragmentById(R.id.listViewFragment);
+        fragment.init(this);
+        
     }
 
     @Override

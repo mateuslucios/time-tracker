@@ -15,10 +15,10 @@ public class TimeTrackerAdapter extends BaseAdapter {
     
     
     public TimeTrackerAdapter(){
-        timeRecords.add(new TimeRecord("38:23", "Feeling good!"));
+        /*timeRecords.add(new TimeRecord("38:23", "Feeling good!"));
         timeRecords.add(new TimeRecord("49:01", "Tired. Needed more caffeine."));
         timeRecords.add(new TimeRecord("26:21", "I'm rocking it!"));
-        timeRecords.add(new TimeRecord("29:42", "Lost some time on the hills, but pretty good."));
+        timeRecords.add(new TimeRecord("29:42", "Lost some time on the hills, but pretty good."));*/
     }
 
     @Override
