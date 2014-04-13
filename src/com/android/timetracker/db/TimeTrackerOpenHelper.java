@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class TimeTrackerOpenHelper extends SQLiteOpenHelper{
 
     public TimeTrackerOpenHelper(Context context) {
-        super(context, "timetracker.db", null, 1);
+        super(context, "timetracker.db", null, 3);
     }
 
     @Override

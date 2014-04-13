@@ -1,13 +1,11 @@
 package com.android.timetracker.db;
 
-import java.util.List;
-
-import com.android.timetracker.TimeRecord;
-
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+
+import com.android.timetracker.TimeRecord;
 
 public class TimeTrackerDatabaseHelper {
     
