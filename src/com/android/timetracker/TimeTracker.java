@@ -15,14 +15,8 @@ public class TimeTracker extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-    }
-    
-    @Override
-    protected void onStart() {
-        super.onStart();
         TimeTrackerListFragment fragment = (TimeTrackerListFragment) getFragmentManager().findFragmentById(R.id.listViewFragment);
         fragment.init(this);
-        
     }
 
     @Override
